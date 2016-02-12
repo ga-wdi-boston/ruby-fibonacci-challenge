@@ -31,8 +31,10 @@ cloning](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone).
 
 -   `FibonacciRange` is Enumerable.
 -   `FibonacciRange` has one instance variable `@stop`. It stores no other
-    state.
--   `FibonacciRange.new` takes one required, positional arguments: `stop`
+    state on the instance.
+-   `#each` stores no more than three values to do its work: `current_fib`,
+    `previous_fib`, and `next_fib`.
+-   `FibonacciRange.new` takes one required, positional argument: `stop`
 -   `FibonacciRange` always starts at `0` when creating a new sequence.
 -   You should not create a list when `FibonacciRange.new` is called. Instead,
     `FibonacciRange.new(10).map(&:itself)` should return `[0, 1, 1, 2, 3, 5,
@@ -48,18 +50,18 @@ you've met these requirements.
 Write a class, `FibonacciNumber`, that returns the `nth` number in the Fibonacci
 sequence. Requirements:
 
--   `FibonacciNumber` stores no state.
--   `FibonacciNumber.new` and `FibonacciNumber.new(1)` should both return the
-     the first Fibonacci number, `0`. In this case, we use "first" as
-     mathematicians would use it, whereas programmers would say "zeroth".
--   `FibonacciNumber.new(3)` returns the third Fibonacci number. Since the
+-   `FibonacciNumber` stores no state on the instance.
+-   `FibonacciNumber.new` and `FibonacciNumber.new(1)` should both
+    return the the first Fibonacci number, `0`. In this case, we use "first" as
+    mathematicians would use it, whereas programmers would say "zeroth".
+-   `FibonacciNumber.new(3).to_i` returns the third Fibonacci number. Since the
      Fibonacci sequence is `0, 1, 1, 2, 3, 5...`, the third number is 1.
 
-You may or may not choose to reuse your `FibonacciRange`. Try it both ways,
-starting with using `FibonacciRange`. You will have to make some interesting
-decisions about how to use it. Then, try a solution without `FibonacciRange`,
-instead using recursion. Make note of the tradeoffs between (pros and cons of)
-each solution.
+This will be **very difficult**. You may or may not choose to reuse your
+`FibonacciRange`. Try it both ways, starting with using `FibonacciRange`. You
+will have to make some interesting decisions about how to use it. Then, try a
+solution without `FibonacciRange`, instead using recursion. Make note of the
+tradeoffs between (pros and cons of) each solution.
 
 ## [License](LICENSE)
 
