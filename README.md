@@ -30,7 +30,8 @@ cloning](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone).
 ## Requirements
 
 -   `FibonacciRange` is Enumerable.
--   `FibonacciRange` has one instance variable `@stop`.
+-   `FibonacciRange` has one instance variable `@stop`. It stores no other
+    state.
 -   `FibonacciRange.new` takes one required, positional arguments: `stop`
 -   `FibonacciRange` always starts at `0` when creating a new sequence.
 -   You should not create a list when `FibonacciRange.new` is called. Instead,
