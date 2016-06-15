@@ -18,26 +18,11 @@ class FibonacciRange
   end
 end
 
-#
+# original way
 class FibonacciNumber
   def self.new(num = 1)
     stop = 0
-    while FibonacciRange.new(stop).to_a.length < num
-      stop += 1
-    end
+    stop += 1 while FibonacciRange.new(stop).to_a.length < num
     FibonacciRange.new(stop).to_a[-1].to_i
   end
 end
-
-# tests
-# my_range = FibonacciRange.new(0).map(&:itself)
-# p my_range
-#
-# my_range = FibonacciRange.new(5).map(&:itself)
-# p my_range
-#
-# my_range = FibonacciRange.new(5).to_a.length
-# p my_range
-#
-# my_num = FibonacciNumber.new(5)
-# p my_num
