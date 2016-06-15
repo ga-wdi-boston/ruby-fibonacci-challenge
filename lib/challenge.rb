@@ -31,9 +31,7 @@ end
 class FibonacciNumber
   def self.new(num = 1)
     array = [0, 1]
-    until array.length > num
-      array.push(array[(array.length - 1)] + array[(array.length - 2)])
-    end
+    array.push(array[-2] + array[-1]) until array.length > num
     array[num - 1]
   end
 end
