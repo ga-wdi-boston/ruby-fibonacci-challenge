@@ -18,5 +18,14 @@ class FibonacciRange
     @stop = stop
   end
 end
-# class FibonacciNumber
-# end
+
+class FibonacciNumber
+  def initialize(num = 1)
+    @num = num
+    @fib_range = FibonacciRange.new(@num).to_a
+  end
+
+  def to_i
+    @fib_range[@num - 1]
+  end
+end
