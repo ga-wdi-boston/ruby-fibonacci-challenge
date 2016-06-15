@@ -19,10 +19,21 @@ class FibonacciRange
 end
 
 # original way
+# class FibonacciNumber
+#   def self.new(num = 1)
+#     stop = 0
+#     stop += 1 while FibonacciRange.new(stop).to_a.length < num
+#     FibonacciRange.new(stop).to_a[-1].to_i
+#   end
+# end
+
+# recursive way
 class FibonacciNumber
   def self.new(num = 1)
-    stop = 0
-    stop += 1 while FibonacciRange.new(stop).to_a.length < num
-    FibonacciRange.new(stop).to_a[-1].to_i
+    array = [0, 1]
+    until array.length > num
+      array.push(array[(array.length - 1)] + array[(array.length - 2)])
+    end
+    array[num - 1]
   end
 end
