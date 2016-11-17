@@ -9,10 +9,10 @@ class FibonacciRange
   end
 
   def each
-    current_fib = 0
-    previous_fib = 1
-    while current_fib < @stop
-      yield current_fib
+    current_fib = 1
+    previous_fib = 0
+    while previous_fib < @stop
+      yield previous_fib
       next_fib = current_fib + previous_fib
       current_fib = next_fib
       previous_fib = current_fib - previous_fib
@@ -24,4 +24,3 @@ class FibonacciNumber
 end
 
 binding.pry
-''
