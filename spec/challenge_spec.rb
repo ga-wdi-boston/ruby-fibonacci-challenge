@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 require_relative '../lib/challenge.rb'
 
 describe 'FibonacciRange' do
@@ -42,7 +43,7 @@ describe 'FibonacciNumber' do
   subject(:fibonacci_number) { FibonacciNumber.new(3) }
 
   it 'is an integer' do
-    expect(subject).to be_a(Fixnum)
+    expect(subject).to be_a(Integer)
   end
 
   it 'has no attributes' do
