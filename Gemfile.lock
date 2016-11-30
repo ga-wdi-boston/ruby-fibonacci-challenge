@@ -2,8 +2,11 @@ GEM
   remote: https://rubygems.org/
   specs:
     ast (2.3.0)
+    binding_of_caller (0.7.2)
+      debug_inspector (>= 0.0.1)
     byebug (9.0.6)
     coderay (1.1.1)
+    debug_inspector (0.0.2)
     diff-lcs (1.2.5)
     method_source (0.8.2)
     parser (2.3.1.4)
@@ -45,6 +48,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  binding_of_caller (~> 0.7.2)
   byebug (~> 9.0)
   pry (~> 0.10)
   pry-byebug (~> 3.3)
