@@ -10,7 +10,7 @@ enumerable and lazy, like `Range` and the previously created `SteppedRange`.
 -   [Fibonacci number](https://en.wikipedia.org/wiki/Fibonacci_number)
 -   [Module: Enumerable (Ruby 2.3.0)](http://ruby-doc.org/core-2.3.0/Enumerable.html)
 -   [Class: Range (Ruby 2.3.0)](http://ruby-doc.org/core-2.3.0/Range.html)
--   [ga-wdi-boston/ruby-enumerable-custom](https://github.com/ga-wdi-boston/ruby-enumerable-custom)
+-   [Ruby Enumerable and Comparable](https://github.com/ga-wdi-boston/ruby-enumerable-custom)
 
 ## Instructions
 
