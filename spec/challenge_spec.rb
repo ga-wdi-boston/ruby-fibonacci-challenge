@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+require 'binding_of_caller'
 require_relative '../lib/challenge.rb'
 
 describe 'FibonacciRange' do
@@ -17,8 +20,6 @@ describe 'FibonacciRange' do
 
   describe '#each' do
     it 'stores minimal state' do
-      require 'binding_of_caller'
-
       local_vars = subject.map do
         binding.of_caller(1).eval('local_variables')
       end.flatten.uniq
@@ -42,7 +43,7 @@ describe 'FibonacciNumber' do
   subject(:fibonacci_number) { FibonacciNumber.new(3) }
 
   it 'is an integer' do
-    expect(subject).to be_a(Fixnum)
+    expect(subject).to be_an(Integer)
   end
 
   it 'has no attributes' do
