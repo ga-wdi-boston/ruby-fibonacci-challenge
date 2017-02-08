@@ -3,8 +3,13 @@
 class FibonacciRange
   include Enumerable
 
+  attr_reader :stop
+
+  def initialize(stop)
+    @stop = stop
+  end
+
   def each
-    previous_fib = 0 # || nil
     current_fib = 0
     next_fib = 1
 
@@ -16,21 +21,12 @@ class FibonacciRange
       next_fib = current_fib + previous_fib
     end
   end
-
-  attr_reader :stop
-  private :stop
-
-  def initialize(stop)
-    @stop = stop
-  end
 end
 
 class FibonacciNumber
-  PHI = (1 + Math.sqrt(5)) / 2
+  PHI = (Math.sqrt(5) + 1) / 2
 
-  def self.new(n = 1)
-    FibonacciRange.new(PHI**n).each_with_index do |fib, i|
-      return fib unless (i + 1) < n
-    end
+  def self.new(n = 0)
+    (((PHI**(n - 1)) / Math.sqrt(5)) + 0.5).floor
   end
 end
