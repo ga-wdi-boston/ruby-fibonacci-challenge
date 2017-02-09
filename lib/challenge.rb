@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# FibonacciRange class
+
 class FibonacciRange
   attr_reader :stop
 
