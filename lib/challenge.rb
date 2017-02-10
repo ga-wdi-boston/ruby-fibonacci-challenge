@@ -27,7 +27,9 @@ end
 class FibonacciNumber
   PHI = (Math.sqrt(5) + 1) / 2
 
-  def self.new(n = 0)
-    (((PHI**(n - 1)) / Math.sqrt(5)) + 0.5).floor
+  def self.new(n)
+    FibonacciRange.new(PHI**n / Math.sqrt(5)).each_with_index do |fib, i|
+      return fib if i == n - 1
+    end
   end
 end
