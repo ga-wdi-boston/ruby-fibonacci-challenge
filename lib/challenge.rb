@@ -4,6 +4,7 @@ class FibonacciRange
   include Enumerable
 
   attr_reader :stop
+  private :stop
 
   def initialize(stop)
     @stop = stop
