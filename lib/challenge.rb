@@ -17,9 +17,7 @@ class FibonacciRange
     while current_fib <= stop
       yield current_fib
 
-      previous_fib = current_fib
-      current_fib = next_fib
-      next_fib = current_fib + previous_fib
+      current_fib, next_fib = next_fib, current_fib + next_fib
     end
   end
 end
