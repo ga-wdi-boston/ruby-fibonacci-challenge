@@ -42,8 +42,8 @@ cloning](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone).
 -   `FibonacciRange.new(10).to_a` should return `[0, 1, 1, 2, 3, 5, 8]`
 
 Pay attention to your linter and fix any syntax errors as they occur. You should
-run `rspec spec` to run the included tests. Tests will tell you whether or not
-you've met these requirements.
+run `bin/rake test` to run the included tests. Tests will tell you whether or
+not you've met these requirements.
 
 ## Bonus
 
