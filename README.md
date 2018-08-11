@@ -52,7 +52,7 @@ sequence. Requirements:
 
 -   `FibonacciNumber` stores no state on the instance.
 -   `FibonacciNumber.new` and `FibonacciNumber.new(1)` should both
-    return the the first Fibonacci number, `0`. In this case, we use "first" as
+    return the first Fibonacci number, `0`. In this case, we use "first" as
     mathematicians would use it, whereas programmers would say "zeroth".
 -   `FibonacciNumber.new(3).to_i` returns the third Fibonacci number. Since the
      Fibonacci sequence is `0, 1, 1, 2, 3, 5...`, the third number is 1.
