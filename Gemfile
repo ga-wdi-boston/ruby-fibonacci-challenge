@@ -2,7 +2,7 @@
 # frozen_string_literal: true
 
 source 'https://rubygems.org'
-ruby '2.3.1'
+ruby '2.5.0'
 gem 'binding_of_caller'
 gem 'byebug', '~> 9.0'
 gem 'pry', '~> 0.10'
